@@ -16,5 +16,8 @@
     "nodemailer": "^6.9.15",
     "puppeteer": "^23.6.0",
     "twilio": "^5.3.4"
+  },
+  "engines": {
+    "node": "20.14.0"
   }
 }
