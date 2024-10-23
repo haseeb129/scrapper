@@ -1,0 +1,1 @@
+worker: node corn.js
