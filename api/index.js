@@ -1,8 +1,8 @@
 const express = require("express");
-const checkAppointments = require("./api/check-appointment");
+const checkAppointments = require("./check-appointment");
 const app = express();
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
   res.send("Hello from Node.js!");
 });
 
@@ -13,3 +13,5 @@ const port = process.env.PORT || 3001;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+module.exports = app;
