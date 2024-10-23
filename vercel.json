@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "corn.js",
+      "use": "@vercel/node"
+    }
+  ]
+}

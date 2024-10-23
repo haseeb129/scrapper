@@ -162,3 +162,4 @@ awsconfiguration.json
 .secret-*
 **.sample
 .env
+.vercel
