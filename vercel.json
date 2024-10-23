@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "corn.js",
+      "src": "./corn.js",
       "use": "@vercel/node"
     }
   ]
