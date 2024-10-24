@@ -22,6 +22,7 @@ module.exports = async (req, res) => {
 
     await Promise.all([
       page.click("#um-submit-btn"),
+
       page.waitForNavigation({ waitUntil: "networkidle0", timeout: 60000 }),
     ]);
 
@@ -63,7 +64,7 @@ const sendEmail = async () => {
   });
 
   const mailOptions = {
-    from: process.env.GMAIL_USERNAME,
+    from: process.env.GMAIL_USERNAME, //
     to: process.env.GMAIL_USERNAME, // send to yourself
     subject: "Appointment Available",
     text: "Appointments are available at https://wefit.world/book-appointment/",
